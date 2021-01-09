@@ -7,12 +7,12 @@
     "64": "icons/icon.png"
   },
   "background": {
-    "scripts": ["background_script.js"]
+    "scripts": ["build/background_script.js"]
   },
   "content_scripts": [
     {
       "matches": ["*://*.mozilla.org/*"],
-      "js": ["content_script.js"]
+      "js": ["build/content_script.js"]
     }
   ],
   "browser_action": {

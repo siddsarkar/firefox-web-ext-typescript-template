@@ -1,2 +1,9 @@
+# modules
 node_modules
+
+
+# extension build zip
 build
+
+# typescript compiled files
+extension-dist/build

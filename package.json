@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently  --names \"TSC,EXT\" -c \"bgGreen.bold,bgMagenta.bold\" \"npm run tsc\" \"npm run start\"",
+    "dev": "concurrently  --names \"TSC,EXT\" -c \"bgGreen.bold,bgMagenta.bold\" \"npm run tsc:watch\" \"npm run start\"",
     "start": "web-ext run --source-dir ./extension-dist/",
-    "tsc": "tsc --watch",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
     "build": "web-ext build --source-dir=./extension-dist/ --artifacts-dir=./build",
     "lint": "web-ext lint --source-dir=./extension-dist/"
   },

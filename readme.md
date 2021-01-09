@@ -4,15 +4,19 @@
 
 - clone the repository
 
+```sh
+git clone https://github.com/siddsarkar/firefox-web-ext-typescript-template.git
+```
+
 - install dependencies
 
-```js
+```sh
 yarn install
 ```
 
 - start development
 
-```js
+```sh
 yarn dev
 ```
 
@@ -22,7 +26,7 @@ yarn dev
 
 - run
 
-```js
+```sh
 yarn build
 ```
 

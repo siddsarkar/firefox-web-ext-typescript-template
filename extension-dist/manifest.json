@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "firefox-web-ext-typescript-template",
+  "description": "Template for building firefox-extension using web-ext and TypeScript.",
+  "version": "0.0.1",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "background": {
+    "scripts": ["background_script.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    "default_popup": "browserAction/index.html",
+    "default_title": "firefox-web-ext-typescript-template"
+  },
+  "page_action": {
+    "show_matches": ["https://*.mozilla.org/*"],
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    "default_popup": "pageAction/index.html",
+    "default_title": "firefox-web-ext-typescript-template"
+  },
+  "options_ui": {
+    "page": "options/index.html"
+  }
+}
